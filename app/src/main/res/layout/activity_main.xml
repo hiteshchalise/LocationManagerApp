@@ -12,12 +12,12 @@
         android:layout_height="wrap_content"
         android:text="Checkpoints"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/CoordinateTV"
-        app:layout_constraintStart_toStartOf="@+id/CoordinateTV"
-        app:layout_constraintTop_toBottomOf="@+id/CoordinateTV" />
+        app:layout_constraintEnd_toEndOf="@+id/distancesTV"
+        app:layout_constraintStart_toStartOf="@+id/distancesTV"
+        app:layout_constraintTop_toBottomOf="@+id/distancesTV" />
 
     <TextView
-        android:id="@+id/CoordinateTV"
+        android:id="@+id/distancesTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CurrentPosition"
-        app:layout_constraintBottom_toTopOf="@+id/CoordinateTV"
+        app:layout_constraintBottom_toTopOf="@+id/distancesTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
