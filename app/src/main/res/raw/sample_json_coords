@@ -82,5 +82,33 @@
       27.691578,
       85.338074
     ]
+  },
+  {
+    "location": "Sankhamul",
+    "coordinates": [
+        27.6843246,
+        85.333356
+    ]
+  },
+  {
+    "location": "Jawalakhel",
+    "coordinates": [
+        27.6733717,
+        85.3127892
+    ]
+  },
+  {
+    "location": "Ekantakuna",
+    "coordinates": [
+        27.6667724,
+        85.3081601
+    ]
+  },
+  {
+    "location": "Bhaisipati",
+    "coordinates": [
+        27.648046,
+        85.2959632
+    ]
   }
 ]

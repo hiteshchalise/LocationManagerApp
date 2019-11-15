@@ -76,41 +76,9 @@ public class LocationHandler implements LocationListener {
         this.viewImpl.handleDistancesChange(distanceHashMap);
     }
 
-    private int getRawRez(String key) {
-        switch (key) {
-            case "Baneshwor":
-                return R.raw.baneshwor;
-            case "GatthaGhar":
-                return R.raw.gathhaghar;
-            case "Jadibuti":
-                return R.raw.jadibuti;
-            case "Khahare":
-                return R.raw.khahare;
-            case "Koteshwor":
-                return R.raw.koteshwor;
-            case "Lokanthali":
-                return R.raw.lokanthali;
-            case "Mahantar":
-                return R.raw.mahantar;
-            case "manisha_ghar":
-                return R.raw.manisha_ghar;
-            case "Pepsicola":
-                return R.raw.pepsicola;
-            case "RadheRadhe":
-                return R.raw.radheradhe;
-            case "Sallaghari":
-                return R.raw.sallaghari;
-            case "Srijananagar":
-                return R.raw.srijananagar;
-            case "Suryabinayek":
-                return R.raw.suryabinayak;
-            case "Tejbinayek":
-                return R.raw.tejbinayek;
-            case "Thimi":
-                return R.raw.thimi;
-            case "Tinkune":
-                return R.raw.tinkune;
-        }
+    private int getRawRez(String locationName) {
+        int raw = ctx.getResources().getIdentifier(locationName.toLowerCase(), "raw", ctx.getPackageName());
+        if(raw != 0) return raw;
         return R.raw.ding;
     }
 
